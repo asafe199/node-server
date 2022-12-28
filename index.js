@@ -19,6 +19,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(`${PATH_CONTEXT}/controller`, ROUTES);
 
+app.get("/", (req, res, next) => {
+  res.send({"Status" : "OK"});
+  res.status(200);
+});
+
 app.use((req, res, next) => {
   const err = new Error('Resource not found');
   err.status = 404;

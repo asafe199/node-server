@@ -1,10 +1,10 @@
 {
   "name": "node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Server for Trustly",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +12,8 @@
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
